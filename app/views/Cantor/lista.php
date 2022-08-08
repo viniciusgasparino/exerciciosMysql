@@ -11,14 +11,16 @@
 					</tr>
 				</thead>
 				<tbody>
+				<?php foreach($vocals as $vocals) { ?>
 					<tr>
-						<td align="center"></td>
-						<td align="center"></td>
+						<td align="center"><?= $vocals["id_cantor"] ?></td>
+						<td align="center"><?= $vocals["cantor"] ?></td>
 						<td align="center">
 							<a href="cadastro.html" class="btn">Excluir</a>
 							<a href="cadastro.html" class="btn">Editar</a>
 						</td>
 					</tr>
+				<?php } ?>	
 				</tbody>
 			<table>
 		</fieldset>
